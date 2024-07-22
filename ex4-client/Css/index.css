@@ -1,0 +1,244 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background-color: #004a75;
+    padding: 40px 0;
+}
+
+    header img {
+        max-width: 40%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        margin-top: 20px;
+        font-size: 3em;
+        color: #fff;
+    }
+
+nav {
+    background-color: #006494;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    nav button {
+        background-color: #ff7f50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+        nav button:hover {
+            background-color: #ff6347;
+            transform: translateY(-2px);
+        }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout:auto;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+}
+
+td > img{
+    width: 70%;
+    padding-bottom: 10px;
+}
+
+/* Add a small shadow to all <td> elements */
+td {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 20%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-size: 12px;
+}
+
+    /* Add hover effect to all <td> elements */
+    td:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+td > p{
+    padding-bottom: 10px;
+}
+
+    td > h3 {
+        padding-bottom: 10px;
+    }
+
+#top-courses-container {
+    padding: 40px;
+    text-align: center;
+    display: float;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+    #top-courses-container h2 {
+        padding-bottom: 50px;
+    }
+
+
+
+    #top-courses-container button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+        #top-courses-container button:hover {
+            opacity: 0.8;
+        }
+
+#courses-container {
+    padding: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+    #courses-container div > img {
+        width: 95%;
+    }
+
+    #courses-container button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+        #courses-container button:hover {
+            opacity: 0.8;
+        }
+
+footer {
+    background-color: #004a75;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#coursesModal {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed;
+    /*left: 0;*/
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    z-index: 1;
+}
+
+#modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 70px;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation-name: modalopen;
+    animation-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Ensure modal content stays within the modal */
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Adjust item sizes in modal */
+#modal-content img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#modal-content h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#modal-content p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+#modal-content a {
+    font-size: 0.9em;
+    color: #3498db;
+}

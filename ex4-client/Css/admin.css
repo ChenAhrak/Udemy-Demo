@@ -1,0 +1,121 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+#homeBtn {
+    margin: auto;
+    position: absolute;
+    left: 200px;
+}
+
+td > img{
+    width: 60%;
+}
+
+td{
+    vertical-align: central;
+}
+
+#overlayMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.messageContent {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#closeOverlay {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+#selectedTitle, #selectedDuration, #selectedUrl, #selectedImageUrl {
+    margin-bottom: 15px;
+}
+
+#coursesDataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    justify-content:center;
+}
+
+    #coursesDataTable tr {
+        width: 100%;
+        padding: 50px;
+    }
+
+.odd, even{
+    width: 500px;
+}
+
+#displayCourses > img {
+    width: 40%;
+    border-radius: 4px;
+}
+
+#coursesDataTable td, #coursesDataTable th {
+    font-size: 15px; 
+  
+}
+
+#imageFile{
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Make text take up more space */
+#coursesDataTable {
+    width: 100%; /* Make the table take up full width */
+    align-content: center;
+    text-align: center;
+}
+
+    #coursesDataTable th, #coursesDataTable td {
+        text-align: center; /* Center-align text */
+        vertical-align: middle; /* Center-align text vertically */
+    }
