@@ -18,3 +18,7 @@ Udemy-Demo is a web application designed to manage courses and users. The applic
 - Database: SQL Server
 
   ## Demo Video
+
+
+https://github.com/user-attachments/assets/eab16d99-1553-4f6a-87d6-fdddce31330e
+
